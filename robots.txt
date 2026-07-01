@@ -1,25 +1,33 @@
 User-agent: GPTBot
+Disallow: /demos/
 Allow: /
 
 User-agent: OAI-SearchBot
+Disallow: /demos/
 Allow: /
 
 User-agent: PerplexityBot
+Disallow: /demos/
 Allow: /
 
 User-agent: ClaudeBot
+Disallow: /demos/
 Allow: /
 
 User-agent: Google-Extended
+Disallow: /demos/
 Allow: /
 
 User-agent: Googlebot
+Disallow: /demos/
 Allow: /
 
 User-agent: Bingbot
+Disallow: /demos/
 Allow: /
 
 User-agent: *
+Disallow: /demos/
 Allow: /
 
 Sitemap: https://www.axdevelopments.ae/sitemap.xml

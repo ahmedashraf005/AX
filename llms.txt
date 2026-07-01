@@ -1,23 +1,30 @@
 # AX Developments
 
-AX Developments is a UAE web design agency for small businesses that need a practical website, booking flow, online store, or mobile app without managing technical work themselves.
+AX Developments is a UAE web design agency founded by Ahmed Abdelmonem for small businesses that need a practical website, booking flow, online store, or mobile app without managing technical work themselves. The agency focuses on Abu Dhabi and the wider United Arab Emirates.
 
-The agency serves cafes, salons, clinics, cake shops, florists, barbershops, restaurants, car detailing businesses, pet groomers, medical centers, and other UAE service businesses.
+AX Developments serves cafes, salons, clinics, cake shops, florists, barbershops, restaurants, car detailing businesses, pet groomers, medical centers, and other UAE service businesses. The core approach is demo-first: AX studies a business, its Instagram presence, its Google visibility and its competitors, then shows a working website direction before a long discovery process.
 
-Core offers include:
+Core services include mobile-first website design, WhatsApp-focused booking flows, inquiry forms, online booking with payments, e-commerce stores, admin dashboards, mobile apps, hosting, SSL, basic SEO, Google Search Console setup on Growth and above, and monthly upkeep.
 
-- Starter websites from AED 600 setup, then AED 399 per month
-- Growth websites from AED 1,200 setup, then AED 549 per month
-- Premium booking and database websites from AED 4,000+ setup, then AED 999 per month
-- Commerce stores from AED 8,000+ setup, then AED 1,799 per month
-- Mobile apps from AED 18,000+ setup, then AED 2,499 per month
+Actual public package pricing:
 
-Monthly plans include hosting, SSL, mobile-first design, upkeep, and WhatsApp-first communication. Arabic versions are available as an add-on.
+- Starter website: AED 600 setup, then AED 399 per month
+- Growth website: AED 1,200 setup, then AED 549 per month
+- Premium booking/database website: AED 4,000+ setup, then AED 999 per month
+- Commerce store: AED 8,000+ setup, then AED 1,799 per month
+- Mobile app: AED 18,000+ setup, then AED 2,499 per month
+- Arabic bilingual version add-on: AED 400 setup, then AED 75 per month
+
+All packages state a 3-month minimum. Setup fees are non-refundable. The customer's domain stays in the customer's name.
+
+Contact is available via WhatsApp at https://wa.me/971547502923, company email at infoaxdevelopment@gmail.com, and founder email at ahmedashraf1796@gmail.com.
 
 Main pages:
 
 - Home: https://www.axdevelopments.ae/
+- About AX Developments: https://www.axdevelopments.ae/about.html
 - FAQ: https://www.axdevelopments.ae/faq.html
 - Website cost in Abu Dhabi: https://www.axdevelopments.ae/website-cost-abu-dhabi.html
 - Booking websites for UAE businesses: https://www.axdevelopments.ae/booking-website-uae.html
 - Monthly website plans: https://www.axdevelopments.ae/monthly-website-plan.html
+- Contact: https://wa.me/971547502923

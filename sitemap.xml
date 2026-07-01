@@ -13,21 +13,27 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.axdevelopments.ae/website-cost-abu-dhabi.html</loc>
+    <loc>https://www.axdevelopments.ae/about.html</loc>
     <lastmod>2026-07-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.axdevelopments.ae/website-cost-abu-dhabi.html</loc>
+    <lastmod>2026-07-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.axdevelopments.ae/booking-website-uae.html</loc>
     <lastmod>2026-07-01</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.axdevelopments.ae/monthly-website-plan.html</loc>
     <lastmod>2026-07-01</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.7</priority>
   </url>
 </urlset>
