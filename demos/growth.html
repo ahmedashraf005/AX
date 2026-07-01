@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lumière Beauty Lounge — UAE</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{--bg:#FBF7F4;--blush:#E8D3CE;--blush2:#F3E7E3;--rose:#C58A8A;--rose-dk:#A86A6A;--ink:#2E2624;--muted:#8C7E78;--cream:#FDFBF9}
+html{scroll-behavior:smooth}
+body{font-family:'Jost',sans-serif;background:var(--bg);color:var(--ink);-webkit-font-smoothing:antialiased}
+.demo-ribbon{position:fixed;top:0;left:0;right:0;z-index:200;background:var(--ink);color:var(--cream);text-align:center;padding:8px;font-size:12px;letter-spacing:0.1em;text-transform:uppercase}
+.demo-ribbon a{color:var(--blush);text-decoration:underline}
+nav{position:fixed;top:33px;left:0;right:0;z-index:100;display:flex;align-items:center;justify-content:space-between;padding:22px 48px;transition:0.3s;border-bottom:1px solid transparent}
+nav.scrolled{background:rgba(251,247,244,0.95);backdrop-filter:blur(12px);padding:14px 48px;border-color:var(--blush)}
+.logo{font-family:'Cormorant Garamond',serif;font-size:26px;font-style:italic;color:var(--ink);letter-spacing:0.02em}
+.nav-links{display:flex;gap:34px}
+.nav-links a{font-size:13px;letter-spacing:0.08em;text-transform:uppercase;color:var(--muted);text-decoration:none;transition:0.2s}
+.nav-links a:hover{color:var(--rose-dk)}
+.nav-book{background:var(--rose);color:#fff;padding:11px 24px;font-size:12px;letter-spacing:0.1em;text-transform:uppercase;text-decoration:none}
+.hero{min-height:100vh;display:grid;grid-template-columns:1.1fr 0.9fr;padding-top:55px}
+.hero-left{display:flex;flex-direction:column;justify-content:center;padding:60px 56px}
+.hero-tag{font-size:12px;letter-spacing:0.18em;text-transform:uppercase;color:var(--rose-dk);margin-bottom:24px;display:flex;align-items:center;gap:10px}
+.hero-tag::before{content:'';width:28px;height:1px;background:var(--rose)}
+.hero h1{font-family:'Cormorant Garamond',serif;font-size:clamp(48px,6.5vw,88px);font-weight:400;line-height:1.04;margin-bottom:24px}
+.hero h1 em{font-style:italic;color:var(--rose-dk)}
+.hero p{font-size:16px;font-weight:300;line-height:1.8;color:var(--muted);max-width:400px;margin-bottom:40px}
+.hero-actions{display:flex;gap:14px;flex-wrap:wrap}
+.btn-rose{background:var(--rose);color:#fff;padding:15px 34px;font-size:13px;letter-spacing:0.08em;text-transform:uppercase;text-decoration:none;transition:0.3s}
+.btn-rose:hover{background:var(--rose-dk)}
+.btn-line{border:1px solid var(--ink);color:var(--ink);padding:14px 34px;font-size:13px;letter-spacing:0.08em;text-transform:uppercase;text-decoration:none;transition:0.3s}
+.btn-line:hover{background:var(--ink);color:var(--cream)}
+.hero-right{background:linear-gradient(160deg,var(--blush2),var(--blush));display:flex;align-items:center;justify-content:center;position:relative}
+.hero-right span{font-family:'Cormorant Garamond',serif;font-size:200px;font-style:italic;color:rgba(197,138,138,0.3)}
+section{padding:100px 56px}
+.sec-head{text-align:center;margin-bottom:60px}
+.sec-tag{font-size:12px;letter-spacing:0.18em;text-transform:uppercase;color:var(--rose-dk);margin-bottom:14px}
+.sec-title{font-family:'Cormorant Garamond',serif;font-size:clamp(34px,5vw,60px);font-weight:400}
+.sec-title em{font-style:italic;color:var(--rose-dk)}
+.services{background:var(--cream)}
+.svc-grid{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.svc-card{background:var(--bg);padding:36px 30px;border:1px solid var(--blush);transition:0.4s}
+.svc-card:hover{transform:translateY(-6px);box-shadow:0 24px 50px -20px rgba(197,138,138,0.3)}
+.svc-card h3{font-family:'Cormorant Garamond',serif;font-size:26px;margin-bottom:8px}
+.svc-card .price{font-size:14px;color:var(--rose-dk);letter-spacing:0.04em;margin-bottom:16px}
+.svc-card p{font-size:14px;color:var(--muted);font-weight:300;line-height:1.7}
+.gallery{background:var(--bg)}
+.gal-grid{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:200px;gap:12px}
+.gal-item{background:linear-gradient(135deg,var(--blush2),var(--blush));position:relative;overflow:hidden;display:flex;align-items:center;justify-content:center}
+.gal-item span{font-family:'Cormorant Garamond',serif;font-size:40px;font-style:italic;color:rgba(255,255,255,0.6)}
+.gal-item.tall{grid-row:span 2}
+.gal-item::after{content:attr(data-label);position:absolute;bottom:14px;left:14px;font-size:11px;letter-spacing:0.08em;text-transform:uppercase;color:var(--ink)}
+.reviews{background:var(--blush2)}
+.rev-grid{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.rev-card{background:var(--cream);padding:32px 28px}
+.rev-stars{color:var(--rose);letter-spacing:3px;margin-bottom:16px}
+.rev-card p{font-family:'Cormorant Garamond',serif;font-size:19px;font-style:italic;line-height:1.5;margin-bottom:20px}
+.rev-author{font-size:12px;letter-spacing:0.1em;text-transform:uppercase;color:var(--muted)}
+.booking{background:var(--ink);color:var(--cream)}
+.book-inner{max-width:680px;margin:0 auto;text-align:center}
+.book-inner .sec-tag{color:var(--blush)}
+.book-inner .sec-title{color:var(--cream)}
+.book-form{margin-top:40px;display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.book-form input,.book-form select{padding:16px;background:rgba(253,251,249,0.06);border:1px solid rgba(253,251,249,0.2);color:var(--cream);font-family:'Jost',sans-serif;font-size:14px;outline:none;transition:0.3s}
+.book-form input:focus,.book-form select:focus{border-color:var(--rose)}
+.book-form input::placeholder{color:rgba(253,251,249,0.4)}
+.book-form option{color:#2E2624}
+.book-form .full{grid-column:1 / -1}
+.book-submit{grid-column:1 / -1;background:var(--rose);color:#fff;border:none;padding:17px;font-size:13px;letter-spacing:0.1em;text-transform:uppercase;font-family:'Jost',sans-serif;cursor:pointer;transition:0.3s}
+.book-submit:hover{background:var(--rose-dk)}
+.book-note{margin-top:16px;font-size:12px;color:rgba(253,251,249,0.5)}
+.map-strip{display:grid;grid-template-columns:1fr 1fr;min-height:400px}
+.map-info{padding:64px 56px;display:flex;flex-direction:column;justify-content:center}
+.map-info h3{font-family:'Cormorant Garamond',serif;font-size:32px;margin-bottom:24px}
+.map-detail{margin-bottom:20px}
+.map-detail .lbl{font-size:11px;letter-spacing:0.14em;text-transform:uppercase;color:var(--rose-dk);margin-bottom:4px}
+.map-detail .val{font-size:15px;color:var(--ink);font-weight:300;line-height:1.6}
+.map-visual{background:linear-gradient(135deg,var(--blush2),var(--blush));display:flex;align-items:center;justify-content:center}
+.map-visual span{font-size:16px;color:var(--muted);letter-spacing:0.1em}
+footer{background:var(--cream);border-top:1px solid var(--blush);padding:40px 56px;text-align:center}
+.foot-logo{font-family:'Cormorant Garamond',serif;font-size:24px;font-style:italic;margin-bottom:12px}
+.foot-copy{font-size:12px;color:var(--muted)}
+.wa-float{position:fixed;bottom:24px;right:24px;width:52px;height:52px;border-radius:50%;background:#25D366;display:flex;align-items:center;justify-content:center;z-index:90;box-shadow:0 6px 20px rgba(37,211,102,0.4)}
+.wa-float svg{width:26px;height:26px;fill:#fff}
+.reveal{opacity:0;transform:translateY(24px);transition:0.8s cubic-bezier(0.16,1,0.3,1)}
+.reveal.vis{opacity:1;transform:none}
+@media(max-width:900px){nav{padding:16px 20px}nav.scrolled{padding:12px 20px}.nav-links{display:none}.hero{grid-template-columns:1fr}.hero-left{padding:50px 20px}.hero-right{min-height:300px}.hero-right span{font-size:120px}section{padding:70px 20px}.svc-grid{grid-template-columns:1fr}.gal-grid{grid-template-columns:1fr 1fr;grid-auto-rows:150px}.gal-item.tall{grid-row:span 1}.rev-grid{grid-template-columns:1fr}.book-form{grid-template-columns:1fr}.map-strip{grid-template-columns:1fr}.map-visual{min-height:240px}}
+</style>
+</head>
+<body>
+<div class="demo-ribbon">Demo by AX Development &nbsp;&middot;&nbsp; This is a sample. <a href="https://wa.me/971547502923" target="_blank">Get yours</a></div>
+<nav id="nav">
+  <div class="logo">Lumière</div>
+  <div class="nav-links"><a href="#services">Services</a><a href="#gallery">Gallery</a><a href="#reviews">Reviews</a><a href="#book">Book</a></div>
+  <a href="#book" class="nav-book">Book Now</a>
+</nav>
+<section class="hero">
+  <div class="hero-left">
+    <div class="hero-tag">United Arab Emirates &middot; Ladies Salon</div>
+    <h1>Where you<br>leave feeling<br><em>luminous.</em></h1>
+    <p>Hair, skin, nails and lashes by artists who treat your look like their reputation. Because it is.</p>
+    <div class="hero-actions"><a href="#book" class="btn-rose">Book appointment</a><a href="#services" class="btn-line">Our services</a></div>
+  </div>
+  <div class="hero-right"><span>L</span></div>
+</section>
+<section class="services" id="services">
+  <div class="sec-head reveal"><div class="sec-tag">What We Do</div><h2 class="sec-title">Treatments &amp; <em>Services</em></h2></div>
+  <div class="svc-grid">
+    <div class="svc-card reveal"><h3>Hair Styling</h3><div class="price">From AED 150</div><p>Cuts, colour, balayage, keratin and blowouts by senior stylists who actually listen.</p></div>
+    <div class="svc-card reveal"><h3>Nails</h3><div class="price">From AED 90</div><p>Manicures, gel, builder gel and nail art that lasts. Spotless, sterile, beautiful.</p></div>
+    <div class="svc-card reveal"><h3>Lashes &amp; Brows</h3><div class="price">From AED 120</div><p>Classic to volume lash sets, lash lifts, brow lamination and tinting.</p></div>
+    <div class="svc-card reveal"><h3>Facials</h3><div class="price">From AED 200</div><p>Deep-cleansing, hydrating and anti-ageing facials tailored to your skin.</p></div>
+    <div class="svc-card reveal"><h3>Makeup</h3><div class="price">From AED 250</div><p>Soft glam to full bridal. For the days you need to feel unforgettable.</p></div>
+    <div class="svc-card reveal"><h3>Bridal Packages</h3><div class="price">On request</div><p>Trials, day-of styling and the whole party handled. Your day, flawless.</p></div>
+  </div>
+</section>
+<section class="gallery" id="gallery">
+  <div class="sec-head reveal"><div class="sec-tag">The Lookbook</div><h2 class="sec-title">Recent <em>Work</em></h2></div>
+  <div class="gal-grid">
+    <div class="gal-item tall reveal" data-label="Balayage"><span>L</span></div>
+    <div class="gal-item reveal" data-label="Soft Glam"><span>U</span></div>
+    <div class="gal-item reveal" data-label="Gel Art"><span>M</span></div>
+    <div class="gal-item tall reveal" data-label="Bridal"><span>I</span></div>
+    <div class="gal-item reveal" data-label="Lash Set"><span>È</span></div>
+    <div class="gal-item reveal" data-label="Facial Glow"><span>R</span></div>
+  </div>
+</section>
+<section class="reviews" id="reviews">
+  <div class="sec-head reveal"><div class="sec-tag">Loved By</div><h2 class="sec-title">What Our <em>Clients Say</em></h2></div>
+  <div class="rev-grid">
+    <div class="rev-card reveal"><div class="rev-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p>Best salon in the city, hands down. My hair has never looked better and the team is so warm.</p><div class="rev-author">Sara M. &middot; Google</div></div>
+    <div class="rev-card reveal"><div class="rev-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p>Did my bridal makeup and I cried happy tears. Lasted the entire wedding. Worth every dirham.</p><div class="rev-author">Noura A. &middot; Google</div></div>
+    <div class="rev-card reveal"><div class="rev-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p>Clean, professional, and they remember exactly how you like everything. My weekly ritual now.</p><div class="rev-author">Hala K. &middot; Google</div></div>
+  </div>
+</section>
+<section class="booking" id="book">
+  <div class="book-inner reveal">
+    <div class="sec-tag">Reserve Your Spot</div>
+    <h2 class="sec-title">Book Your <em>Appointment</em></h2>
+    <div class="book-form">
+      <input type="text" placeholder="Your name">
+      <input type="tel" placeholder="Phone number">
+      <select><option>Select service</option><option>Hair Styling</option><option>Nails</option><option>Lashes &amp; Brows</option><option>Facial</option><option>Makeup</option><option>Bridal</option></select>
+      <input type="date">
+      <input type="text" class="full" placeholder="Anything we should know? (optional)">
+      <button class="book-submit" onclick="sendBooking()">Request appointment</button>
+    </div>
+    <div class="book-note">This sends straight to our WhatsApp. We confirm within the hour during opening times.</div>
+  </div>
+</section>
+<div class="map-strip">
+  <div class="map-info">
+    <h3>Visit Lumière</h3>
+    <div class="map-detail"><div class="lbl">Location</div><div class="val">Your district, your city<br>Second floor, lift access</div></div>
+    <div class="map-detail"><div class="lbl">WhatsApp</div><div class="val">+971 54 750 2923</div></div>
+    <div class="map-detail"><div class="lbl">Hours</div><div class="val">Daily 10am to 9pm &middot; Ladies only</div></div>
+  </div>
+  <div class="map-visual"><span>Map embeds here</span></div>
+</div>
+<footer>
+  <div class="foot-logo">Lumière</div>
+  <div class="foot-copy">Demo site built by AX Development &middot; UAE</div>
+</footer>
+<a href="https://wa.me/971547502923" class="wa-float" target="_blank" aria-label="WhatsApp"><svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></a>
+<script>
+window.addEventListener('scroll',function(){document.getElementById('nav').classList.toggle('scrolled',window.scrollY>40)});
+var ob=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('vis');ob.unobserve(e.target)}})},{threshold:0.15});
+document.querySelectorAll('.reveal').forEach(function(el){ob.observe(el)});
+function sendBooking(){var t='Hi Lumière, I would like to book an appointment.';window.open('https://wa.me/971547502923?text='+encodeURIComponent(t),'_blank')}
+</script>
+</body>
+</html>
